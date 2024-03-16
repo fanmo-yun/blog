@@ -228,10 +228,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/fanmo-yun
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 代码驱动世界!!
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
