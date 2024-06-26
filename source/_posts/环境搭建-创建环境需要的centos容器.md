@@ -23,7 +23,7 @@ docker pull centos:centos7.9.2009
 
 ## 建立容器待更新
 
-2. 新建一个容器并设置名为`centos`, 再进入这个容器
+2. 新建一个容器并设置名为`centos`，再进入这个容器
 
 ```bash
 docker run -itd --name centos centos:centos7.9.2009 /bin/bash
@@ -32,9 +32,9 @@ docker exec -it centos /bin/bash
 
 - `docker run`命令用于在 Docker 中运行一个容器
 - `-itd` 是选项组合：
-  - `-i`: 交互模式运行容器。
-  - `-t`: 为容器分配一个伪终端。
-  - `-d`: 后台运行该容器（分离模式）。
+  - `-i`: 交互模式运行容器
+  - `-t`: 为容器分配一个伪终端
+  - `-d`: 后台运行该容器（分离模式）
 - `--name centos`为容器建立一个名称为`centos`
 - `centos:centos7.9.2009`镜像名称和标签
 - `/bin/bash`启动容器后启动/bin/bash
@@ -48,7 +48,7 @@ docker exec -it centos /bin/bash
 cp /etc/yum.d/source.list ~/source.list
 ```
 
-- 将`source.list`文件备份到主目录。
+- 将`source.list`文件备份到主目录
 
 4. 添加`ustc`镜像源
 
@@ -105,7 +105,7 @@ docker run -itd --name slave1 --network mynetwork --ip 192.168.1.152 --privilege
 docker run -itd --name slave2 --network mynetwork --ip 192.168.1.153 --privileged=true --hostname slave2 centos:v1 /sbin/init
 ```
 
-- `-v /sys/fs/cgroup:/sys/fs/cgroup`: 将宿主机的/sys/fs/cgroup 目录挂载到容器的/sys/fs/cgroup 目录。这样做是为了让容器能够访问宿主机的 cgroup 文件系统，为后面安装 mysql 打下基础
+- `-v /sys/fs/cgroup:/sys/fs/cgroup`: 将宿主机的`/sys/fs/cgroup`目录挂载到容器的`/sys/fs/cgroup`目录。这样做是为了让容器能够访问宿主机的`cgroup`文件系统，为后面安装`mysql`打下基础
 - `--network mynetwork`: 将容器连接到名为 mynetwork 的 Docker 网络
 - `--ip 192.168.1.151`: 指定容器的 IP 地址为 192.168.1.151
 - `--privileged=true`: 启用特权模式
@@ -119,7 +119,7 @@ docker exec -it slave1 /bin/bash
 docker exec -it slave2 /bin/bash
 ```
 
-- 分别进入`master`、`slave1`和`slave2`容器的 Bash 终端
+- 分别进入`master`、`slave1`和`slave2`容器的Bash终端
 
 # 参考文章
 
