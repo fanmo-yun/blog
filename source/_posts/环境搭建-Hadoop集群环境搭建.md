@@ -25,7 +25,7 @@ docker cp /path/to/hadoop-3.3.6.tar.gz master:/root
 tar zxvf /root/hadoop-3.3.6.tar.gz -C /opt/module/
 ```
 
-3. 将`hadoop-3.3.6`改名为`hadoop`
+3. 将解压后的目录改名为`hadoop`
 
 ```bash
 mv /opt/module/hadoop-3.3.6 /opt/module/hadoop
@@ -194,7 +194,7 @@ scp -r /opt/module/hadoop/ slave2:/opt/module/
 /opt/module/hadoop/bin/hdfs dfs -ls /
 ```
 
-14. 使用`jps`命令查看`Hadoop`进程：
+14. 使用`jps`命令查看`hadoop`进程：
 
 ```bash
 jps
@@ -203,7 +203,6 @@ jps
 - master 容器中
 
 ```bash
-[root@master ~]# jps
 6257 SecondaryNameNode
 6549 ResourceManager
 5990 DataNode
@@ -215,7 +214,6 @@ jps
 - slave1 容器中
 
 ```bash
-[root@slave1 ~]# jps
 165 DataNode
 441 Jps
 271 NodeManager
@@ -224,7 +222,6 @@ jps
 - slave2 容器中
 
 ```bash
-[root@slave2 ~]# jps
 247 NodeManager
 397 Jps
 141 DataNode
