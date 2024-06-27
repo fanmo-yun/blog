@@ -11,7 +11,7 @@ date: 2024-06-26 16:58:36
 
 # Kafka 集群环境搭建
 
-## 安装 kafka
+## 复制和安装 kafka
 
 1. 将本地 `kafka` 复制进 `master` 容器中 `root` 目录中
 
@@ -48,28 +48,10 @@ log.dirs=/opt/module/kafka/data
 zookeeper.connect=master:2181,slave1:2181,slave2:2181
 ```
 
-- `broker.id=0`：
-
-  - `broker.id` 用于标识 Kafka broker 的唯一 ID。每个 broker 在集群中必须有一个唯一的 ID
-  - 在集群中的每个节点（master、slave1、slave2）应该配置不同的 `broker.id`，例如 `0`, `1`, `2` 分别对应 `master`, `slave1`, `slave2`
-
-- `listeners=PLAINTEXT://master:9092`：
-
-  - `listeners` 用于指定 broker 监听客户端连接的地址和端口
-  - `PLAINTEXT` 表示使用明文传输（不加密）
-  - `master:9092` 表示这个 broker 在 `master` 主机的 `9092` 端口上监听连接
-  - 对应的配置在 `slave1` 和 `slave2` 中，应将 `master` 改为相应的主机名（例如 `slave1:9092` 和 `slave2:9092`）
-
-- `log.dirs=/opt/module/kafka/data`：
-
-  - `log.dirs` 用于指定 Kafka 存储日志数据（包括消息）的目录。这个目录将包含 Kafka topic 的分区数据
-  - 可以指定多个目录，用逗号分隔，例如 `/opt/module/kafka/data1,/opt/module/kafka/data2`
-
-- `zookeeper.connect=master:2181,slave1:2181,slave2:2181`：
-  - `zookeeper.connect` 用于指定 Kafka 集群使用的 Zookeeper 集群的连接字符串
-  - Zookeeper 是 Kafka 用来进行集群管理和协调的服务
-  - 连接字符串包括 Zookeeper 的主机名和端口号。多个 Zookeeper 实例用逗号分隔
-  - 在此例中，Zookeeper 集群包含 `master`，`slave1` 和 `slave2` 三个节点，每个节点的 Zookeeper 服务都监听 `2181` 端口
+- `broker.id` 用于标识 Kafka broker 的唯一 ID。每个 broker 在集群中必须有一个唯一的 ID
+- `listeners=PLAINTEXT://:9092`：`listeners` 用于指定 broker 监听客户端连接的地址和端口、`PLAINTEXT` 表示使用明文传输（不加密）
+- `log.dirs`：用于指定 Kafka 存储日志数据（包括消息）的目录。这个目录将包含 Kafka topic 的分区数据
+- `zookeeper.connect=master:2181,slave1:2181,slave2:2181`：用于指定 Kafka 集群使用的 Zookeeper 集群的连接字符串、Zookeeper 是 Kafka 用来进行集群管理和协调的服务、连接字符串包括 Zookeeper 的主机名和端口号。多个 Zookeeper 实例用逗号分隔
 
 6. 分发 `kafka`
 
