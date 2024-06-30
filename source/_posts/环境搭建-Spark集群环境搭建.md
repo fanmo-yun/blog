@@ -13,7 +13,7 @@ date: 2024-06-26 15:06:48
 
 ## 复制和安装 spark
 
-1. 将本地`spark`复制进`master`容器中`root`目录中
+1. 将本地`spark-3.1.1-bin-hadoop3.2.tgz`复制进`master`容器中`root`目录中
 
 ```bash
 docker cp /path/to/spark-3.1.1-bin-hadoop3.2.tgz master:/root

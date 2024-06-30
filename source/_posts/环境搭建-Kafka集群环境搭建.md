@@ -13,13 +13,13 @@ date: 2024-06-26 16:58:36
 
 ## 复制和安装 kafka
 
-1. 将本地 `kafka` 复制进 `master` 容器中 `root` 目录中
+1. 将本地`kafka_2.11-2.4.1.tgz`复制进`master`容器中`root`目录中
 
 ```bash
 docker cp /path/to/kafka_2.11-2.4.1.tgz master:/root
 ```
 
-2. 将 `kafka` 解压进 `/opt/module` 目录下
+2. 将`kafka`解压进`/opt/module`目录下
 
 ```bash
 tar zxvf /root/kafka_2.11-2.4.1.tgz -C /opt/module/
@@ -98,7 +98,6 @@ jps
 
 ```bash
 4548 Kafka
-5023 Jps
 ```
 
 # 参考文章

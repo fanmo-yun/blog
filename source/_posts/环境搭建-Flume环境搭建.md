@@ -13,7 +13,7 @@ date: 2024-06-26 16:58:21
 
 ## 复制和安装 flume
 
-1. 将本地`flume`复制进`master`容器中`root`目录中
+1. 将本地`apache-flume-1.9.0-bin.tar.gz`复制进`master`容器中`root`目录中
 
 ```bash
 docker cp /path/to/apache-flume-1.9.0-bin.tar.gz master:/root

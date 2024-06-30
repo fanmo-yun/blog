@@ -74,10 +74,10 @@ yum update
 6. 提交保存镜像
 
 ```bash
-docker submit -m "centos:update" centos centos:v1
+docker commit -m "centos:update" centos centos:v1
 ```
 
-- `docker submit`把有修改的容器提交成新的镜像
+- `docker commit`把有修改的容器提交成新的镜像
 - `-m`添加注释
 - `centos`有修改的容器名称
 - `centos:v1`新的镜像名称和标签名

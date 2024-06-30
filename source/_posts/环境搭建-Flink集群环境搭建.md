@@ -13,7 +13,7 @@ date: 2024-06-26 15:58:48
 
 ## 复制和安装 flink
 
-1. 将本地`flink`复制进`master`容器中`root`目录中
+1. 将本地`flink-1.14.0-bin-scala_2.11.tgz`复制进`master`容器中`root`目录中
 
 ```bash
 docker cp /path/to/flink-1.14.0-bin-scala_2.11.tgz master:/root

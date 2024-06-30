@@ -13,7 +13,7 @@ date: 2024-06-26 16:57:11
 
 ## 复制和安装 zookeeper
 
-1. 将本地`zookeeper`复制进`master`容器中`root`目录中
+1. 将本地`apache-zookeeper-3.5.7-bin.tar.gz`复制进`master`容器中`root`目录中
 
 ```bash
 docker cp /path/to/apache-zookeeper-3.5.7-bin.tar.gz master:/root
