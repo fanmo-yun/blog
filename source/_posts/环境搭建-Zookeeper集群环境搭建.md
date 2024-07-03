@@ -25,7 +25,7 @@ docker cp /path/to/apache-zookeeper-3.5.7-bin.tar.gz master:/root
 tar zxvf /root/apache-zookeeper-3.5.7-bin.tar.gz -C /opt/module/
 ```
 
-3. 将解压后的目录改名为 `zookeeper`
+3. 将解压后的目录改名为`zookeeper`
 
 ```bash
 mv /opt/module/apache-zookeeper-3.5.7-bin /opt/module/zookeeper
@@ -84,13 +84,13 @@ scp -r /opt/module/zookeeper slave1:/opt/module
 scp -r /opt/module/zookeeper slave2:/opt/module
 ```
 
-9. 配置 `slave1` 中的 `myid` 文件，写入 `2` 表示 `slave1` 节点的 ID
+9. 配置`slave1`中的`myid`文件，写入`2`表示`slave1`节点的 ID
 
 ```bash
 echo "2" > /opt/module/zookeeper/data/myid
 ```
 
-10. 配置 `slave2` 中的 `myid` 文件，写入 `3` 表示 `slave2` 节点的 ID
+10. 配置`slave2`中的`myid`文件，写入`3`表示`slave2`节点的 ID
 
 ```bash
 echo "3" > /opt/module/zookeeper/data/myid
@@ -124,7 +124,7 @@ jps
 /opt/module/zookeeper/bin/zkCli.sh
 ```
 
-14. 输入 `ls /`, 出现`[zookeeper]`即配置成功
+14. 输入`ls /`, 出现`[zookeeper]`即配置成功
 
 ```bash
 [zk: localhost:2181(CONNECTED) 0] ls /

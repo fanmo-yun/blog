@@ -25,7 +25,7 @@ docker cp /path/to/flink-1.14.0-bin-scala_2.11.tgz master:/root
 export HADOOP_CLASSPATH = `hadoop classpath`
 ```
 
-3. 将 `flink` 解压进 `/opt/module` 目录下
+3. 将`flink`解压进`/opt/module`目录下
 
 ```bash
 tar zxvf /root/flink-1.14.0-bin-scala_2.11.tgz -C /opt/module/
@@ -67,7 +67,7 @@ slave1
 slave2
 ```
 
-8. 配置 `masters`
+8. 配置`masters`
 
 - 该文件用于指定`JobManager`节点和端口
 

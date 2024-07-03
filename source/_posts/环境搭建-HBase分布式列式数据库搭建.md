@@ -3,7 +3,10 @@ title: "环境搭建:HBase分布式列式数据库搭建"
 abbrlink: c60385f
 date: 2024-06-27 10:31:04
 categories:
+  - 环境搭建
 tags:
+  - 环境搭建
+  - HBase
 ---
 
 # Hbase 环境搭建

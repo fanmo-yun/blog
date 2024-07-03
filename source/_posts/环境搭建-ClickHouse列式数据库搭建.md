@@ -3,14 +3,17 @@ title: "环境搭建:ClickHouse列式数据库搭建"
 abbrlink: a4fb20bc
 date: 2024-06-27 10:32:47
 categories:
+  - 环境搭建
 tags:
+  - 环境搭建
+  - ClickHouse
 ---
 
 # ClickHouse 列式数据库搭建
 
 ## 复制和安装 clickhouse
 
-1. 将本地 `clickhouse` 相关文件复制进 `master` 容器中 `root` 目录中
+1. 将本地`clickhouse`相关文件复制进`master`容器中`root`目录中
 
 ```bash
 docker cp clickhouse-client-21.9.4.35.tgz master:/root
@@ -19,7 +22,7 @@ docker cp clickhouse-common-static-dbg-21.9.4.35.tgz master:/root
 docker cp clickhouse-server-21.9.4.35.tgz master:/root
 ```
 
-2. 将 `clickhouse` 文件解压到 `/opt/module` 目录中
+2. 将`clickhouse`文件解压到`/opt/module`目录中
 
 ```bash
 tar zxvf clickhouse-client-21.9.4.35.tgz -C /opt/module
@@ -28,11 +31,11 @@ tar zxvf clickhouse-common-static-dbg-21.9.4.35.tgz -C /opt/module
 tar zxvf clickhouse-server-21.9.4.35.tgz -C /opt/module
 ```
 
-3. 安装 `clickhouse`
+3. 安装`clickhouse`
 
 > 若有输入用户名或密码的则跳过
 
-- 执行每个文件路径下 `install` 目录下 `doinstall.sh`
+- 执行每个文件路径下`install`目录下`doinstall.sh`
 
 ```bash
 /opt/module/clickhouse-common-static-21.9.4.35/install/doinst.sh

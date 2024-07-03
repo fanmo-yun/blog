@@ -142,14 +142,9 @@ scp -r /opt/module/spark slave2:/opt/module/
 
 8. 使用`jps`命令查看`spark`进程：
 
-```bash
-jps
-```
-
 - master 容器中
 
 ```bash
-9329 Jps
 8935 Master
 9127 Worker
 ```
@@ -157,14 +152,12 @@ jps
 - slave1 容器中
 
 ```bash
-9359 Jps
 8127 Worker
 ```
 
 - slave2 容器中
 
 ```bash
-2329 Jps
 9457 Worker
 ```
 

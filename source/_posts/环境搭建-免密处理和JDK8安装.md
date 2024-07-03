@@ -14,9 +14,9 @@ date: 2024-06-26 07:47:39
 
 > !!!以下指令需要在三个容器中都运行!!!
 
-## 安装 ssh 及网络工具
+## 安装ssh及网络工具
 
-1. 输入指令来安装 ssh 和网络工具
+1. 输入指令来安装ssh和网络工具
 
 ```bash
 yum install openssh-server openssh-clients net-tools
@@ -43,7 +43,7 @@ Port 22
 #ListenAddress ::
 ```
 
-4. 开启 ssh
+4. 开启ssh
 
 ```bash
 systemctl start sshd    # 开启ssh
@@ -86,7 +86,7 @@ ssh-copy-id master; ssh-copy-id slave1; ssh-copy-id slave2
 
 # 安装 JDK8
 
-## 复制和安装 JDK8
+## 复制和安装JDK8
 
 1. 将本地的`jdk-8u202-linux-x64.tar.gz`复制进`master`容器中`root`目录中
 

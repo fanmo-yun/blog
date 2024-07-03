@@ -3,7 +3,10 @@ title: '环境搭建:Redis非关系型数据库搭建'
 abbrlink: 150d2b8b
 date: 2024-06-27 10:31:56
 categories:
+  - 环境搭建
 tags:
+  - 环境搭建
+  - Redis
 ---
 
 # Redis 非关系型数据库搭建

@@ -3,7 +3,10 @@ title: "环境搭建:MySQL数据库搭建"
 abbrlink: cec3650d
 date: 2024-06-27 10:29:58
 categories:
+  - 环境搭建
 tags:
+  - 环境搭建
+  - MySQL
 ---
 
 # MySQL 数据库搭建

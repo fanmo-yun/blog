@@ -39,7 +39,7 @@ mv /opt/module/kafka_2.11-2.4.1 /opt/module/kafka
 cd /opt/module/kafka/config
 ```
 
-5. 配置 `server.properties`
+5. 配置`server.properties`
 
 ```conf
 broker.id=0
@@ -53,14 +53,14 @@ zookeeper.connect=master:2181,slave1:2181,slave2:2181
 - `log.dirs`：用于指定 Kafka 存储日志数据（包括消息）的目录。这个目录将包含 Kafka topic 的分区数据
 - `zookeeper.connect=master:2181,slave1:2181,slave2:2181`：用于指定 Kafka 集群使用的 Zookeeper 集群的连接字符串、Zookeeper 是 Kafka 用来进行集群管理和协调的服务、连接字符串包括 Zookeeper 的主机名和端口号。多个 Zookeeper 实例用逗号分隔
 
-6. 分发 `kafka`
+6. 分发`kafka`
 
 ```bash
 scp -r /opt/module/kafka/ slave1:/opt/module/
 scp -r /opt/module/kafka/ slave2:/opt/module/
 ```
 
-7. 修改 `slave1` `slave2` 中的 `server.properties`
+7. 修改`slave1` `slave2`中的`server.properties`
 
 - slave1
 

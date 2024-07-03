@@ -3,7 +3,10 @@ title: "环境搭建:Hive数据仓库搭建"
 abbrlink: "677e0722"
 date: 2024-06-27 10:30:03
 categories:
+  - 环境搭建
 tags:
+  - 环境搭建
+  - Hive
 ---
 
 # Hive 数据仓库搭建
@@ -46,7 +49,7 @@ cd /opt/module/hive/conf
 cp hive-env.sh.template hive-env.sh
 ```
 
-5. 配置 `hive-env.sh`
+5. 配置`hive-env.sh`
 
 - 添加`hadoop目录`和`hive配置文件目录`的环境变量
 
