@@ -60,7 +60,7 @@ sed -i 's/9000/9001/g' config.xml
 <!-- <listen_host>0.0.0.0</listen_host> --> 改为 <listen_host>0.0.0.0</listen_host>
 ```
 
-5. 开启并验证 clickhouse
+## 开启并验证 clickhouse
 
 ```bash
 systemctl start clickhouse-server
