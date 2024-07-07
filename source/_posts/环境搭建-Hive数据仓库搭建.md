@@ -101,7 +101,7 @@ export HIVE_CONF_DIR=/opt/module/hive/conf
 - `javax.jdo.option.ConnectionUserName`:连接元数据数据库时使用的用户名
 - `javax.jdo.option.ConnectionPassword`:连接元数据数据库时使用的密码
 
-7. 删除旧版的`guava.jar`文件，从 hadoop 中复制新版的`guava.jar`
+7. 删除旧版的`guava.jar`文件，从hadoop中复制新版的`guava.jar`，这样做为了防止两个版本之间发生冲突
 
 ```bash
 rm -rf /opt/module/hive/lib/guava-19.0.jar
